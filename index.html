@@ -56,7 +56,7 @@ document.querySelector('.grid').addEventListener('click', e => {
 if (e.target.tagName !== 'BUTTON') return;
 
 const id = e.target.dataset.id;
-const src = `./mp3/${id}.mp3`;
+const src = `${id}.mp3`;
 
 if (currentAudio) {
 currentAudio.pause();
